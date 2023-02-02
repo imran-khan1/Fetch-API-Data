@@ -40,8 +40,8 @@ add_action('admin_menu', 'codeinform_register_fetch_api_menu_page');
 function codeinform_get_send_data()
 {
 
-	$url = 'https://jsonplaceholder.typicode.com/users';
-
+	//$url = 'https://jsonplaceholder.typicode.com/users';
+	$url = '';
 	$arguments = array(
 		'method' => 'GET'
 	);
@@ -50,7 +50,7 @@ function codeinform_get_send_data()
 
 	if (is_wp_error($response)) {
 		$error_message = $response->get_error_message();
-		return "Something went wrong: $error_message";
+		echo "Something went wrong: $error_message";
 	} else {
 
 		echo '<pre>';
