@@ -44,7 +44,7 @@ function codeinform_register_fetch_api_menu_page() {
 		'manage_options',
 		'api-fetch.php',
 		'codeinform_get_send_data',
-		'dashicons-testimonial',
+		'dashicons-text',
 		16
 	);
 }
